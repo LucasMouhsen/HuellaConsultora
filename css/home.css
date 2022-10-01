@@ -180,6 +180,54 @@
     text-align: justify;
 }
 
+/* Formulario */
+
+.home .formulario {
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+.home .formulario form{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.home .formulario form div{
+    text-align: center;
+    background: #4d0686;
+    width: 46%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.home .formulario form h4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+.home .formulario form input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.home .formulario form textarea{
+    width: 90%;
+    resize: none;
+    border-radius: 5px;
+}
+.home .formulario form span {
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+
 @media (max-width: 425px) {
     /* ABOUT US */
 

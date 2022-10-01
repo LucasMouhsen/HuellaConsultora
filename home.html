@@ -12,13 +12,13 @@
 </head>
 
 <body class="home">
-    <header>
+    <header id="inicio">
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
         <section class="textos-header">
             <h1>Potencia tus ventas al menos un 200%</h1>
@@ -33,7 +33,7 @@
     </header>
     <main>
         <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">Nuestro producto</h2>
+            <h2 class="titulo" id="about">Nuestro producto</h2>
             <div class="contenedor-sobre-nosotros">
                 <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
                 <div class="contenido-textos">
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio">
+        <section class="portafolio" id="portafolio">
             <div class="contenedor">
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-services">
+        <section class="about-services" id="servicios">
             <div class="contenedor">
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="servicio-cont">
@@ -152,9 +152,28 @@
                 </div>
             </div>
         </section>
+        <section class="formulario contacto" id="contacto">
+            <div class="contenedor ">
+                <h2 class="titulo">Contacto</h2>
+                <div class="contacto">
+                    <form action="" class="form-contacto ">
+                        <div class="">
+                            <h4>Nombre:</h4>
+                            <input type="text" name="name" value="">
+                            <h4>Email:</h4>
+                            <input type="email" name="email" value="">
+                        </div>
+                        <div class="div_textarea ">
+                            <h4>Mensaje:</h4>
+                            <textarea name="msj" cols="50" rows="10"  ></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="contenedor-footer">
+        <!-- <div class="contenedor-footer">
             <div class="content-foo">
                 <h4>Phone</h4>
                 <p>8296312</p>
@@ -167,7 +186,7 @@
                 <h4>Location</h4>
                 <p>8296312</p>
             </div>
-        </div>
+        </div> -->
         <h2 class="titulo-final">Bitz Design</h2>
     </footer>
 </body>
