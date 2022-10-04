@@ -1,31 +1,58 @@
+@font-face {
+    font-family: Adam;
+    src: url("../img/Tipografia/Adam-Medium.ttf");
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Adam'; 
 }
 
 body {
-    font-family: 'open sans';
+    font-family: "open sans";
 }
 
 input {
     border: none;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+textarea {
+    resize: none !important;
+}
+
 :root {
     --color-background: #fff;
-    --color-titulo: #642a73;
-    --color-about-services-background: #f2f2f2;
-    --color-about-num-background: #4d0686;
+    --color-titulo: #000;
+    --color-background-1: #fff;
+    --color-background-2: #f2f2f2;
+    --color-about-num-background: #bda61c;
     --color-about-num: #fff;
-    --color-portafolio: #fff;
-    --color-portafolio-hover-p: #fff;
-    --color-portafolio-hover-background: hsla(273, 91%, 27%, 0.7);
-    --color-clientes-background: #f2f2f2;
-    --color-clientes-card-p: #fff;
-    --color-clientes-card-background: #4d0686;
-    --color-formulario-background: #fff;
-    --color-formulario-card: #4d0686;
-    --color-formmulario-h4: #fff;
+    --color-portafolio-hover-p: #000;
+    --color-portafolio-hover-background: rgba(189, 166, 28,0.7);
+    --color-card-h4: #000;
+    --color-clientes-card-background: #bda61c;
+    --color-formulario-card: #bda61c;
     --color-formulario-span: #fff;
+    --header: linear-gradient(to right,
+            rgba(189, 166, 28, 0.459),
+            rgba(80, 57, 89, 0.664)),
+        url(../img/portada.jpg);
+    --header2: -webkit-linear-gradient(to right,
+            hsla(340, 95%, 50%, 0.459),
+            hsla(317, 45%, 52%, 0.664)),
+        url(../img/portada.jpg);
+    /* --font-family: 'Adam-light', sans-serif; */
+    --font-size-normal: 16px;
+    --font-size-hover: 25px;
+    --font-size-card: 20px;
 }
