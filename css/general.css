@@ -8,6 +8,24 @@ body {
     font-family: 'open sans';
 }
 
-input{
+input {
     border: none;
+}
+
+:root {
+    --color-background: #fff;
+    --color-titulo: #642a73;
+    --color-about-services-background: #f2f2f2;
+    --color-about-num-background: #4d0686;
+    --color-about-num: #fff;
+    --color-portafolio: #fff;
+    --color-portafolio-hover-p: #fff;
+    --color-portafolio-hover-background: hsla(273, 91%, 27%, 0.7);
+    --color-clientes-background: #f2f2f2;
+    --color-clientes-card-p: #fff;
+    --color-clientes-card-background: #4d0686;
+    --color-formulario-background: #fff;
+    --color-formulario-card: #4d0686;
+    --color-formmulario-h4: #fff;
+    --color-formulario-span: #fff;
 }

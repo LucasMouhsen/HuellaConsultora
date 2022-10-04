@@ -7,7 +7,7 @@
 }
 
 .home .titulo {
-    color: #642a73;
+    color: var(--color-titulo);
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -38,8 +38,8 @@
 }
 
 .home .contenido-textos h3 span {
-    background: #4d0686;
-    color: #fff;
+    background: var(--color-about-num-background);
+    color: var(--color-about-num);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -60,7 +60,7 @@
 
 
 .home .portafolio {
-    background: #f2f2f2;
+    background: var(--color-portafolio);
 }
 
 .home .galeria-port {
@@ -91,7 +91,7 @@
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: hsla(273, 91%, 27%, 0.7);
+    background: var(--color-portafolio-hover-background);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@
 }
 
 .home .hover-galeria p {
-    color: #fff;
+    color: var(--color-portafolio-hover-p);
 }
 
 .home .imagen-port:hover .hover-galeria {
@@ -113,16 +113,20 @@
 
 /* Clients */
 
+.home .clientes {
+    background: var(--color-clientes-background);
+}
+
 .home .cards {
     display: flex;
     justify-content: space-evenly;
 }
 
 .home .cards .card {
-    background: #4d0686;
+    background: var(--color-clientes-card-background);
     display: flex;
     width: 46%;
-    height: 200px;
+    height: 250px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
@@ -140,7 +144,7 @@
 
 .home .cards .card>.contenido-texto-card {
     width: 60%;
-    color: #fff;
+    color: var(--color-clientes-card-p);
 }
 
 .home .cards .card>.contenido-texto-card p {
@@ -151,7 +155,7 @@
 /*  Our team */
 
 .home .about-services {
-    background: #f2f2f2;
+    background: var(--color-about-services-background);
     padding-bottom: 30px;
 }
 
@@ -183,7 +187,7 @@
 /* Formulario */
 
 .home .formulario {
-    background: #ffffff;
+    background: var(--color-formulario-background);
     padding-bottom: 30px;
 }
 .home .formulario form{
@@ -193,7 +197,7 @@
 }
 .home .formulario form div{
     text-align: center;
-    background: #4d0686;
+    background: var(--color-formulario-card);
     width: 46%;
     height: 300px;
     border-radius: 5px;
@@ -202,7 +206,7 @@
 .home .formulario form h4 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: var(--color-formulario-h4);
 }
 .home .formulario form input{
     width: 300px;
@@ -216,7 +220,7 @@
 }
 .home .formulario form span {
     background: #4d0686;
-    color: #fff;
+    color: var(--color-formulario-span);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
