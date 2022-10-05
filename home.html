@@ -38,19 +38,21 @@
                 <div class="contenedor-sobre-nosotros">
                     <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
                     <div class="contenido-textos">
-                        <h3><span>1</span>Los mejores productos</h3>
+                        <h3><span class="number">1</span>Los mejores productos</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                            consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                            consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi
+                            pariatur,
                             velit doloribus laboriosam ut.</p>
-                        <h3><span>2</span>Los mejores productos</h3>
+                        <h3><span class="number">2</span>Los mejores productos</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                            consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                            consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi
+                            pariatur,
                             velit doloribus laboriosam ut.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section class="clientes">
             <div class="contenedor">
                 <h2 class="titulo">Quienes somos</h2>
@@ -68,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="contenedor">
+                <div class="contenedor">
         </section>
         <section class="portafolio" id="portafolio">
             <div class="contenedor">
@@ -160,15 +162,30 @@
                 <h2 class="titulo">Contacto</h2>
                 <div class="contacto">
                     <form action="" class="form-contacto ">
-                        <div class="">
-                            <h4>Nombre:</h4>
-                            <input type="text" name="name" value="">
-                            <h4>Email:</h4>
-                            <input type="email" name="email" value="">
-                        </div>
-                        <div class="div_textarea ">
-                            <h4>Mensaje:</h4>
-                            <textarea name="msj" cols="50" rows="10"  ></textarea>
+                        <div class="card-form">
+                            <div class="form-input">
+                                <input type="text" name="name" placeholder="Nombre">
+                                <input type="email" name="email" placeholder="Mail">
+                                <input type="number" name="wsp" placeholder="WhatsApp">
+                                <textarea name="msj" cols="50" rows="10" placeholder="Mensaje"></textarea>
+                                <div class="div-button">
+                                    <button  type="submit">Enviar</button>
+                                </div>
+                            </div>
+                            <div class="info-contact">
+                                <div class="address">
+                                    <span class="address-span">Address:</span>
+                                    <p> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                </div>
+                                <div class="phone">
+                                    <span class="phone-span">Phone:</span>
+                                    <p><a href="#">+ 1235 2355 98</a></p>
+                                </div>
+                                <div class="email">
+                                    <span class="email-span">Email:</span>
+                                    <p><a href="#">info@yoursite.com</a></p>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
