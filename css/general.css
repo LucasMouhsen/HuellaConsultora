@@ -22,6 +22,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 li {
   list-style: none;
 }
@@ -58,9 +62,10 @@ button {
     --color-card-background: linear-gradient(to right, #503959, #8c7488);
     --color-card-h4: #fff;
     --color-formulario-span: #fff;
-    --header: linear-gradient(to right,rgba(189, 166, 28, 0.459),rgba(80, 57, 89, 0.664)),url(../img/portada.jpg);
+    --header: linear-gradient(to right,rgba(80, 57, 89, 0.8),rgba(189, 166, 28, 0.2)),url(../img/portada.jpg);
     --header2: -webkit-linear-gradient(to right,hsla(340, 95%, 50%, 0.459),hsla(317, 45%, 52%, 0.664)),url(../img/portada.jpg);
     --color-button: #000;
+    --header-scroll: #503959;
     --font-size-normal: 16px;
     --font-size-hover: 25px;
     --font-size-card: 20px;
