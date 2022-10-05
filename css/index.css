@@ -103,6 +103,7 @@
 
 .home .hover-galeria img {
     width: 100px;
+    height: 100%;
 }
 .home .hover-galeria p {
     font-size: var(--font-size-hover);
@@ -285,7 +286,7 @@
     vertical-align: super;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     /* ABOUT US */
 
     .home .imagen-about-us {
@@ -354,6 +355,14 @@
         width: 44%;
     }
 
+    .home .hover-galeria img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .home .hover-galeria p {
+        font-size: 18px;
+    }
     /* Clientes */
 
     .home .cards {
