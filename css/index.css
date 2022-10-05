@@ -313,10 +313,23 @@
     }
 
     .home .cards .card img {
-        width: 90px;
-        height: 90px;
+        width: 75%;
+        height: 75%;
+        margin: 0;
     }
+    /* Form */
 
+    .home .formulario form .div-button {
+        margin-top: 15px;
+    }
+    .home .formulario form .card-form{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+    .home .formulario form .info-contact {
+        padding: 30px;
+    }
 
 }
 
