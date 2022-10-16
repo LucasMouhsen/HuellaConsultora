@@ -2,6 +2,12 @@
   font-family: Adam;
   src: url("../img/Tipografia/Adam-Medium.ttf");
 }
+
+@font-face {
+  font-family: Adam-Light;
+  src: url("../img/Tipografia/Adam-Light.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +16,7 @@
 }
 
 body {
-  font-family: "open sans";
+  font-family: "Adam";
 }
 
 input {
@@ -50,14 +56,17 @@ button {
   display: inline-block;
   font-size: 16px;
 }
-p{
+
+p {
   font-size: var(--font-size-normal);
 }
+
 p span {
   color: #bda61c;
   font-weight: 700;
   font-size: 22px;
 }
+
 :root {
   --color-background: #fff;
   --color-titulo: #000;
@@ -70,20 +79,15 @@ p span {
   --color-card-background: linear-gradient(to right, #503959, #8c7488);
   --color-card-h4: #fff;
   --color-formulario-span: #fff;
-  --header: linear-gradient(
-      to right,
-      rgba(189, 166, 28, 0.3),
-      rgba(6, 5, 7, .9)
-    ),
-    url(../img/huella-banner.jpg);
-  --header2: -webkit-linear-gradient(
+  --header: url(../img/Logos/Banner-Huella.jpg);
+  /* --header2: -webkit-linear-gradient(
       to right,
       rgba(80, 57, 89, 0.8),
       rgba(189, 166, 28, 0.2)
     ),
-    url(../img/huella-banner.jpg);
+    url(../img/Logos/Banner-Huella.jpg); */
   --color-button: #000;
-  --header-scroll: #503959;
+  --header-scroll: linear-gradient(90deg, rgba(80, 57, 89, 1) 0%, rgba(189, 166, 28, 1) 100%);
   --font-size-normal: 17px;
   --font-size-hover: 25px;
   --font-size-card: 20px;

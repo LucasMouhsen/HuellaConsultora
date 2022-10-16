@@ -9,47 +9,57 @@
     <link class="icon" rel="shortcut icon" href="img/Logos/Isotipo - Huella.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="home">
     <header>
+        <!-- Antiguo -->
         <nav class="nav-header" id="header">
             <div>
                 <a href="">Inicio</a>
-                <a href="#about">Acerca de</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#about">Sobre Huella</a>
+                <a href="#portafolio">Quienes somos</a>
+                <a href="#servicios">Nuestros servicios</a>
+                <a href="#pilares">Nuestros pilares</a>
+                <a href="#contacto">contacto</a>
             </div>
-            <a href=""><img class="logo" src="./img/Logos/Logotipo-Huella.png" alt=""></a>
+            <a href=""><img class="logo" id="logo" src="./img/Logos/Logotipo-Huella-white.png" alt=""></a>
         </nav>
-        <section class="textos-header">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-            <h2>Lorem ipsum dolor sit amet</h2>
-        </section>
+        <nav class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+
+        <!-- Fin Antiguo -->
+    </header>
+    <main>
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: #fff;"></path>
             </svg>
         </div>
-    </header>
-    <main>
-        <section class="sobre-nosotros">
+        <section class="sobre-nosotros reveal">
             <div class="contenedor">
                 <h2 class="titulo" id="about">Sobre Huella</h2>
                 <div class="contenedor-sobre-nosotros">
                     <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
                     <div class="contenido-textos">
                         <h3><span class="number">1</span>¿Por que huella?</h3>
-                        <p><span>P</span>orque por <span>"Huella"</span> se conoce al rastro, seña, vestigio, que deja alguien o algo. Ese es
+                        <p><span>P</span>orque por <span>"Huella"</span> se conoce al rastro, seña, vestigio, que deja
+                            alguien o algo. Ese es
                             nuestro sello inspirador.</p>
                         <h3><span class="number">2</span>¿Que queremos?</h3>
-                        <p><span>E</span>ntre todos podemos construir una sociedad mejor, partiendo desde nuestros valores más
+                        <p><span>E</span>ntre todos podemos construir una sociedad mejor, partiendo desde nuestros
+                            valores más
                             genuinos, que debemos recobrar, donde cada uno puede -y debe- comprometerse a aportar su
                             propia coloratura, su diferencia, su perspectiva, enriqueciendo al conjunto.</p>
                         <h3><span class="number">3</span>¿Que buscamos?</h3>
-                        <p><span>C</span>ontagiar a otros que se entusiasmen a seguir; legado que aspiramos a transmitir ahora y para
+                        <p><span>C</span>ontagiar a otros que se entusiasmen a seguir; legado que aspiramos a transmitir
+                            ahora y para
                             las generaciones futuras, entendiendo que el mundo es nuestra casa, que nos merecemos -y
                             podemos- vivir mejor, en valores, más plenamente, de forma empática con el otro y amigable
                             con el entorno que nos rodea, potenciando nuestra peculiar vocación personal, familiar y
@@ -58,37 +68,44 @@
                 </div>
             </div>
         </section>
-
-        <section class="clientes">
+        <section class="about-services reveal" id="pilares">
             <div class="contenedor">
-                <h2 class="titulo">Quienes somos</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img src="img/Ricardo.png" alt="Ricardo Julianelli">
-                        <div class="contenido-texto-card">
-                            <h4>Ricardo Julianelli</h4>
-                        </div>
+                <h2 class="titulo">Nuestros pilares</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/Mision.png" alt="Mision">
+                        <h3>Mision</h3>
+                        <p><span>L</span>ograr organizaciones genuinamente humanas, productivas y en armonía con el
+                            entorno, para un mundo cada vez mejor.</p>
                     </div>
-                    <div class="card">
-                        <img src="img/Juan.png" alt="Juan Ortega">
-                        <div class="contenido-texto-card">
-                            <h4>Juan Ortega</h4>
+                    <div class="servicio-ind">
+                        <img src="img/Vision.png" alt="Vision">
+                        <h3>Vision</h3>
+                        <p><span>P</span>riorizamos el valor social, cultural y ambiental de cada negocio, aspirando a
+                            una sociedad mejor, con una perspectiva sostenible y sustentable, basada en la
+                            transparencia, respeto y honestidad.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/Valores.png" alt="Valores">
+                        <h3>valores</h3>
+                        <div>
+                            <p><span>S</span>ociales: Es esencial para nosotros la riqueza del desarrollo y aporte
+                                individual y su contribución colaborativa en la esfera colectiva.</p>
+                        </div>
+                        <div>
+                            <p><span>D</span>inamicas de trabajo:</p>
+                            <ul>
+                                <li>Individual (o personal)</li>
+                                <li>Colectiva y organizacional</li>
+                                <li>Hacia la cadena de valor</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="contenedor team">
-                    <p><span>S</span>omos un equipo de profesionales especializados que anhelamos promover organizaciones públicas y
-                        privadas (civiles, comerciales, gremiales, etc.) que, en sus diferentes quehaceres, conformen
-                        sus objetivos, personas, recursos y entornos desde una perspectiva umana, integral y
-                        colaborativa.
-                    </p>
-                    <p> <span>T</span>odos tenemos algo para decir, algo que aportar, así sea en el respetuoso y elocuente silencio, disenso o juicio crítico. Esa es la <span>"Huella"</span> que queremos dejar; tal nuestro compromiso y desafío.
-
-                    </p>
-                </div>
-                <div class="contenedor">
+            </div>
         </section>
-        <section class="portafolio" id="portafolio">
+
+        <section class="portafolio reveal" id="servicios">
             <div class="contenedor">
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="galeria-port">
@@ -123,39 +140,8 @@
                 </div>
             </div>
         </section>
-        <section class="about-services" id="servicios">
-            <div class="contenedor">
-                <h2 class="titulo">Nuestros pilares</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="img/Mision.png" alt="Mision">
-                        <h3>Mision</h3>
-                        <p><span>L</span>ograr organizaciones genuinamente humanas, productivas y en armonía con el entorno, para un mundo cada vez mejor.</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/Vision.png" alt="Vision">
-                        <h3>Vision</h3>
-                        <p><span>P</span>riorizamos el valor social, cultural y ambiental de cada negocio, aspirando a una sociedad mejor, con una perspectiva sostenible y sustentable, basada en la transparencia, respeto y honestidad.</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/Valores.png" alt="Valores">
-                        <h3>valores</h3>
-                        <div>
-                            <p><span>S</span>ociales: Es esencial para nosotros la riqueza del desarrollo y aporte individual y su contribución colaborativa en la esfera colectiva.</p>
-                        </div>
-                        <div>
-                            <p><span>D</span>inamicas de trabajo:</p>
-                            <ul>
-                                <li>Individual (o personal)</li>
-                                <li>Colectiva y organizacional</li>
-                                <li>Hacia la cadena de valor</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="formulario contacto" id="contacto">
+
+        <section class="formulario contacto reveal" id="contacto">
             <div class="contenedor ">
                 <h2 class="titulo">Contacto</h2>
                 <div class="contacto">
@@ -172,13 +158,8 @@
                             </div>
                             <div class="info-contact">
                                 <div class="address">
-                                    <span class="address-span">Address:</span>
-                                    <p>Calle Falsa 123 - San Miguel</p>
+                                    <span class="address-span">Dirección:</span>
                                     <p>Buenos Aires - Argentina</p>
-                                </div>
-                                <div class="phone">
-                                    <span class="phone-span">Phone:</span>
-                                    <p><a href="#">+54 11 2233 4455</a></p>
                                 </div>
                                 <div class="email">
                                     <span class="email-span">Email:</span>
@@ -189,6 +170,38 @@
                     </form>
                 </div>
             </div>
+        </section>
+        <section class="clientes reveal" id="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Quienes somos</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/Ricardo.png" alt="Ricardo Julianelli">
+                        <div class="contenido-texto-card">
+                            <h4>Ricardo Julianelli</h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/Juan.png" alt="Juan Ortega">
+                        <div class="contenido-texto-card">
+                            <h4>Juan Ortega</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor team">
+                    <p><span>S</span>omos un equipo de profesionales especializados que anhelamos promover
+                        organizaciones públicas y
+                        privadas (civiles, comerciales, gremiales, etc.) que, en sus diferentes quehaceres, conformen
+                        sus objetivos, personas, recursos y entornos desde una perspectiva umana, integral y
+                        colaborativa.
+                    </p>
+                    <p> <span>T</span>odos tenemos algo para decir, algo que aportar, así sea en el respetuoso y
+                        elocuente silencio, disenso o juicio crítico. Esa es la <span>"Huella"</span> que queremos
+                        dejar; tal nuestro compromiso y desafío.
+
+                    </p>
+                </div>
+                <div class="contenedor">
         </section>
     </main>
     <footer>
@@ -209,6 +222,7 @@
         <h2 class="titulo-final">Bitz Design</h2>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/sidebar.js"></script>
 </body>
 
 </html>
