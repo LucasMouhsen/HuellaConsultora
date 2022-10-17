@@ -1,47 +1,43 @@
-ScrollReveal({ reset: true });
-ScrollReveal().reveal(".reveal");
+window.addEventListener('load', () => {
+    ScrollReveal({ reset: true }),
+        ScrollReveal().reveal(".reveal"),
 
-const headerScroll = () => {
-    const header = document.getElementById('header')
-    const logo = document.getElementById('logo'),
-        headerHeight = header.offsetHeight
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > headerHeight) {
-            header.classList.add('header-white')
-            logo.classList.add('logo-active')
-            document.querySelectorAll("#aHeader").classList.add('aHeader')
-        } else {
-            header.classList.remove('header-white')
-            logo.classList.remove('logo-active')
+        /* Cambia color de header al scrollear */
+
+        headerScroll = () => {
+            const header = document.getElementById('header')
+            const logo = document.getElementById('logo')
+            const aHeader = document.getElementsByClassName('aHeader'),
+                headerHeight = header.offsetHeight
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > headerHeight) {
+                    header.classList.add('header-white')
+                    logo.classList.add('logo-active')
+                    for (let i = 0; i < aHeader.length; i++) {
+                        aHeader[i].classList.add('aHeader-active')
+                    }
+                } else {
+                    header.classList.remove('header-white')
+                    logo.classList.remove('logo-active')
+                }
+            })
+        },
+
+        headerScroll(),
+
+        /* Mostrar menu al tocar burger-icon */
+        showMenu = (headerToggle, navbarId) => {
+            const toggleBtn = document.getElementById(headerToggle),
+                nav = document.getElementById(navbarId)
+
+            if (headerToggle && navbarId) {
+                toggleBtn.addEventListener('click', () => {
+                    nav.classList.toggle('show-menu')
+                    
+                    document.getElementById('i-toggle').classList.toggle('i-active')
+                })
+            }
+
         }
-    })
-}
-
-const headerColor = () => {
-} 
-headerScroll()
-
-
-
-/* const showMenu = (headerToggle, navbarId) =>{
-    const toggleBtn = document.getElementById(headerToggle),
-    nav = document.getElementById(navbarId)
-    
-    if(headerToggle && navbarId){
-        toggleBtn.addEventListener('click', ()=>{
-            nav.classList.toggle('show-menu')
-            toggleBtn.classList.toggle('bx-x')
-        })
-    }
-}
-showMenu('header-toggle','navbar')
-
-const linkColor = document.querySelectorAll('.nav__link')
-
-function colorLink(){
-    linkColor.forEach(l => l.classList.remove('activo'))
-    this.classList.add('activo')
-}
-
-linkColor.forEach(l => l.addEventListener('click', colorLink))
- */
+    showMenu('header-toggle', 'header')
+})

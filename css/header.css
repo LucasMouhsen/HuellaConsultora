@@ -36,7 +36,7 @@ header .header-white {
     background: var(--header-scroll) !important;
 }
 
-header .header-white .aHeader{
+header .header-white .aHeader-active{
     color: #fff;
 }
 
@@ -122,13 +122,35 @@ header .toggle{
         padding: 0;
         display: none;
     }
+
+    header .nav-header div{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    header .nav-header div a{
+        color: #fff;
+        font-size: 27px;
+        font-weight: 700;
+    }
     header .toggle{
         display: block;
         margin: 15px 0 0 15px;
-        position: relative;
     }
-    header .toggle i{
+    header .toggle .i-toggle{
         font-size: 25px;
-        position: absolute;
+        position: fixed;
+        color: #000;
+        z-index: 99;
+    }
+    header .toggle .i-active{
+        color: #fff;
+    }
+    header .show-menu {
+        display: block;
+        height: 100vh;
+        background: linear-gradient(90deg, rgba(80, 57, 89, 1) 0%, rgba(189, 166, 28, 1) 100%);
     }
 }
