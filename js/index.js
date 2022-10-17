@@ -9,6 +9,7 @@ const headerScroll = () => {
         if (window.scrollY > headerHeight) {
             header.classList.add('header-white')
             logo.classList.add('logo-active')
+            document.querySelectorAll("#aHeader").classList.add('aHeader')
         } else {
             header.classList.remove('header-white')
             logo.classList.remove('logo-active')
@@ -16,6 +17,8 @@ const headerScroll = () => {
     })
 }
 
+const headerColor = () => {
+} 
 headerScroll()
 
 
