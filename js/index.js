@@ -29,14 +29,13 @@ window.addEventListener('load', () => {
         showMenu = (headerToggle, navbarId) => {
             const toggleBtn = document.getElementById(headerToggle),
                 nav = document.getElementById(navbarId)
-
-            if (headerToggle && navbarId) {
-                toggleBtn.addEventListener('click', () => {
-                    nav.classList.toggle('show-menu')
-                    
-                    document.getElementById('i-toggle').classList.toggle('i-active')
-                })
-            }
+            const iToggle = document.getElementById('i-toggle')
+            toggleBtn.addEventListener('click', () => {
+                nav.classList.toggle('show-menu')
+                nav.classList.add('reveal')
+                iToggle.classList.toggle('i-active')
+                
+            })
 
         }
     showMenu('header-toggle', 'header')

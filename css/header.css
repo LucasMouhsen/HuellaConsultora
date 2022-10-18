@@ -116,7 +116,6 @@ header .toggle{
     header {
         background-position: center;
         height: 55vw;
-
     }
     header .nav-header {
         padding: 0;
@@ -136,7 +135,7 @@ header .toggle{
         font-weight: 700;
     }
     header .toggle{
-        display: block;
+        display: grid;
         margin: 15px 0 0 15px;
     }
     header .toggle .i-toggle{
@@ -149,8 +148,10 @@ header .toggle{
         color: #fff;
     }
     header .show-menu {
-        display: block;
+        display: flex;
+        flex-direction: column;
         height: 100vh;
         background: linear-gradient(90deg, rgba(80, 57, 89, 1) 0%, rgba(189, 166, 28, 1) 100%);
+        transition: all 1 ease-out;
     }
 }
