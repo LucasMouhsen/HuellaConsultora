@@ -1,0 +1,73 @@
+.modal-container,
+.modal-container2,
+.modal-container-v1,
+.modal-container-v2,
+.modal-container-v3,
+.modal-container-v4,
+.modal-container-v5 {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal h1,
+.modal2 h1 {
+    text-align: center;
+}
+
+.modal li,
+.modal2 li {
+    opacity: 1;
+    font-size: var(--font-size-normal);
+    margin: 1rem;
+}
+
+.ul_li li{
+    margin-left: 20px;
+}
+
+@media (max-width: 769px) {
+
+    .modal,
+    .modal2 {
+        width: 90vw;
+    }
+
+    .modal h1,
+    .modal2 h1 {
+        text-align: center;
+    }
+
+    .modal li,
+    .modal2 li{
+        font-size: 15px;
+        margin: 0.3rem 0;
+    }
+    .ul_li li{
+        margin-left: 20px;
+    }
+}

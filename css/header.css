@@ -120,6 +120,7 @@ header .toggle{
     header .nav-header {
         padding: 0;
         display: none;
+        text-align: center;
     }
 
     header .nav-header div{

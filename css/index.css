@@ -69,8 +69,13 @@
   justify-items: center;
 }
 
+.home .portafolio .contenedor p {
+  margin: 20px 40px;
+  text-align: center;
+}
+
 .home .imagen-port {
-  width: 85%;
+  width: 80%;
   height: 35vh;
   margin-bottom: 15px;
   overflow: hidden;
@@ -106,6 +111,7 @@
 }
 .home .hover-galeria p {
   font-size: var(--font-size-hover);
+  font-weight: 500;
 }
 
 .home .hover-galeria p {
@@ -179,7 +185,7 @@
 
 .home .servicio-cont {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .home .servicio-ind {
@@ -198,6 +204,28 @@
 .home .servicio-ind p {
   font-weight: 300;
   text-align: justify;
+}
+.home .valores {
+  text-align: center;
+}
+
+.home .valores img {
+  width: 100%;
+}
+
+.home .valores h3 {
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.home .valores p {
+  font-weight: 300;
+  text-align: justify;
+  margin-top: 10px;
+}
+.home .valores li{
+  text-align: start;
+  margin-left: 10%;
 }
 
 /* Formulario */

@@ -32,10 +32,6 @@ a:hover {
   text-decoration: underline;
 }
 
-li {
-  list-style: none;
-}
-
 textarea {
   resize: none !important;
   border: none;
@@ -89,6 +85,6 @@ p span {
   --color-button: #000;
   --header-scroll: linear-gradient(90deg, rgba(80, 57, 89, 1) 0%, rgba(189, 166, 28, 1) 100%);
   --font-size-normal: 17px;
-  --font-size-hover: 25px;
+  --font-size-hover: 30px;
   --font-size-card: 20px;
 }
