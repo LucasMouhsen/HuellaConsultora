@@ -65,14 +65,15 @@ p span {
 
 :root {
   --color-background: #fff;
-  --color-titulo: #1b1b1b;
+  --color-titulo: #202020;
   --color-background-1: #fff;
   --color-background-2: #f2f2f2;
   --color-about-num-background: #bda61c;
   --color-about-num: #fff;
-  --color-portafolio-hover-p: #1b1b1b;
+  --color-portafolio-hover-p: #202020;
   --color-portafolio-hover-background: rgba(189, 166, 28, 0.7);
-  --color-card-background: linear-gradient(to right, #503959, #8c7488);
+  --color-card-background: #1b1b1b
+  /* linear-gradient(to right, #503959, #8c7488) */;
   --color-card-h4: #fff;
   --color-formulario-span: #fff;
   --header: url(../img/Logos/Banner-Huella.jpg);
@@ -82,8 +83,8 @@ p span {
       rgba(189, 166, 28, 0.2)
     ),
     url(../img/Logos/Banner-Huella.jpg); */
-  --color-button: #1b1b1b;
-  --header-scroll: #1b1b1b
+  --color-button: #bda61c;
+  --header-scroll: #202020
   /* linear-gradient(90deg, rgba(80, 57, 89, 1) 0%, rgba(189, 166, 28, 1) 100%) */;
   --font-size-normal: 17px;
   --font-size-hover: 30px;

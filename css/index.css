@@ -282,7 +282,7 @@
   font-size: 16px;
 }
 .home .formulario form .number {
-  background: #4d0686;
+  background: #4b0684;
   color: var(--color-formulario-span);
   border-radius: 50%;
   display: inline-block;
@@ -290,7 +290,7 @@
   width: 30px;
   height: 30px;
   padding: 2px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 6px 0 rgba(75, 6, 132, 0.5);
   margin-right: 5px;
 }
 
