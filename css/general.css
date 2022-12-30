@@ -87,6 +87,6 @@ p span {
   --header-scroll: #202020
   /* linear-gradient(90deg, rgba(80, 57, 89, 1) 0%, rgba(189, 166, 28, 1) 100%) */;
   --font-size-normal: 17px;
-  --font-size-hover: 30px;
+  --font-size-hover: 25px;
   --font-size-card: 20px;
 }

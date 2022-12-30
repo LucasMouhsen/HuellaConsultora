@@ -64,9 +64,9 @@
 }
 
 .home .galeria-port {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .home .portafolio .contenedor p {
@@ -75,9 +75,9 @@
 }
 
 .home .imagen-port {
-  width: 80%;
+  width: 40%;
   height: 35vh;
-  margin-bottom: 15px;
+  margin: 15px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
